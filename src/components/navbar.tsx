@@ -42,7 +42,7 @@ export default function NavBar() {
           ))}
         </ul>
         <div className="md:hidden" onClick={toggleMenu}>
-          <FaBars size={30} color={`#000`} />
+          <FaBars size={30} color={`#000`} className={"dark:invert"} />
         </div>
       </nav>
     </>
