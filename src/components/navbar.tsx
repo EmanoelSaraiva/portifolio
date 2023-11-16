@@ -19,7 +19,13 @@ export default function NavBar() {
   return (
     <>
       <nav className="flex lg:justify-around sm:justify-between justify-between w-full p-3 items-center absolute top-0">
-        <Image src="/logo2.svg" alt={"logo"} width={50} height={50} />
+        <Image
+          src="/logo2.svg"
+          alt={"logo"}
+          width={50}
+          height={50}
+          className={"dark:invert"}
+        />
         <ul className="hidden md:flex flex-row gap-4 justify-around text-2xl font-bold">
           {navigation.map((i) => (
             <li key={i.url}>
