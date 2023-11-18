@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Roboto } from "next/font/google";
 import NavBar from "@/components/navbar";
+import CardContact from "@/components/cardcontato";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -14,7 +14,7 @@ export default function Contacts() {
     >
       <NavBar />
 
-      <h1 className="text-5xl">Contato</h1>
+      <CardContact />
     </main>
   );
 }
