@@ -11,10 +11,10 @@ export default function CardContact() {
             <a
               href="https://www.linkedin.com/in/emanoel-saraiva/"
               target="_blank"
-              className="flex flex-col items-center"
+              className="flex flex-col items-center "
             >
               <FaLinkedin
-                className={"dark:invert hover:animate-pulse"}
+                className={"hover:animate-pulse dark:invert-0"}
                 size={50}
               />
               <span className="font-bold hover:border-b-purple-700 hover:border-b-2">
@@ -30,7 +30,7 @@ export default function CardContact() {
             >
               <FaGithub
                 size={50}
-                className={"dark:invert hover:animate-pulse"}
+                className={"hover:animate-pulse dark:invert-0"}
               />
               <span className="font-bold hover:border-b-purple-700 hover:border-b-2">
                 GitHub
@@ -53,7 +53,7 @@ export default function CardContact() {
             className="flex flex-col items-center"
           >
             <FaLinkedin
-              className={"dark:invert hover:animate-pulse"}
+              className={"dark:invert-0 hover:animate-pulse"}
               size={50}
             />
             <span className="font-bold hover:border-purple-700 hover:border-b-2">
@@ -67,7 +67,10 @@ export default function CardContact() {
             target="_blank"
             className="flex flex-col items-center"
           >
-            <FaGithub size={50} className={"dark:invert hover:animate-pulse"} />
+            <FaGithub
+              size={50}
+              className={"dark:invert-0 hover:animate-pulse"}
+            />
             <span className="font-bold hover:border-purple-700 hover:border-b-2">
               GitHub
             </span>
@@ -107,7 +110,7 @@ export default function CardContact() {
             name="about"
             cols={30}
             rows={5}
-            className="rounded-md p-2"
+            className="rounded-md p-2 text-black"
           ></textarea>
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </section>
