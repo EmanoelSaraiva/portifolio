@@ -5,31 +5,28 @@ export default function CardPerfil() {
   const [isHover, setIsHover] = useState(false);
   return (
     <>
-      <h1 className="text-4xl text-center w-full font-bold pl-11">
-        Bem vindo ao meu portifólio!
-      </h1>
-      <section className="flex items-center md:flex w-full justify-center h-full">
+      <section className="flex flex-col items-center md:flex w-3/4 justify-center h-full gap-5">
         <div
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
-          className="max-md:hidden"
+          className="max-md:hidden flex flex-col items-center gap-2"
         >
           <Image
             src={isHover ? "/imgAvatar.png" : "/imgPerfil.jpg"}
             alt={""}
             width={200}
             height={200}
-            className={`rounded-full border-4 border-purple-800 transition duration-300 ease-in-out mr-10`}
+            className={`rounded-full border-4 border-purple-800 transition duration-500 ease-in-out`}
             priority
           />
-        </div>
-        <section className="w-2/4 h-2/4">
-          <h2 className="text-3xl text-center font-bold">
+          <h2 className="text-2xl text-center font-bold">
             Emanoel Saraiva da Silva
           </h2>
-          <p className="text-center font-normal">
-            {" "}
-            Neste portifólio irei mostrar um pouco sobre mim!
+        </div>
+        <section className="border-2 p-4 rounded-2xl border-purple-700 shadow-md dark:shadow-gray-700 hover:animate-pulse">
+          <p className="text-center font-bold text-4xl flex flex-col">
+            FullStack Web
+            <span className="text-purple-700 text-6xl">Developer</span>
           </p>
         </section>
       </section>

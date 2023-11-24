@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Roboto } from "next/font/google";
 import NavBar from "@/components/navbar";
-import CardPerfil from "@/components/cardperfil";
 
 const roboto = Roboto({
   subsets: ["latin"],
