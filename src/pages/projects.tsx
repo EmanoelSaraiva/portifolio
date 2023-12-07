@@ -17,7 +17,7 @@ export default function Projects() {
 
       <CardProject
         title="Funnel ADS"
-        description="Neste projeto esta sendo desenvolvido em equipe, juntamente com mais 3 desenvolvedores, onde fiquei fiz tanto front quanto back!"
+        description="Neste projeto esta sendo desenvolvido em equipe, juntamente com mais 3 desenvolvedores, onde fiquei responsável pelo FrontEnd!"
         url="https://funnel-ads.vercel.app/"
       >
         <Image
