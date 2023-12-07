@@ -19,10 +19,10 @@ export default function CardPerfil() {
             className={`rounded-full border-4 border-purple-800 transition duration-500 ease-in-out`}
             priority
           />
-          <h2 className="text-2xl text-center font-bold">
-            Emanoel Saraiva da Silva
-          </h2>
         </div>
+        <h1 className="text-2xl text-center font-bold">
+          Emanoel Saraiva da Silva
+        </h1>
         <section className="border-2 p-4 rounded-2xl border-purple-700 shadow-md dark:shadow-gray-700 hover:animate-pulse">
           <p className="text-center font-bold text-4xl flex flex-col">
             FullStack Web

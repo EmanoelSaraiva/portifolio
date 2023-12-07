@@ -53,7 +53,6 @@ export default function NavBar() {
             <div>
               <Menu.Button className="relative flex rounded-full text-sm focus:outline-none ">
                 <span className="absolute -inset-1.5" />
-                <span className="sr-only">Open user menu</span>
                 {menuOpens ? (
                   <FaTimes size={30} color={`#000`} className={"dark:invert"} />
                 ) : (
