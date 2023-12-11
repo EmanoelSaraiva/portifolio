@@ -11,7 +11,7 @@ const roboto = Roboto({
 export default function Projects() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-center gap-2  ${roboto.className}`}
+      className={`flex min-h-screen items-center justify-center gap-2  ${roboto.className}`}
     >
       <NavBar />
 
@@ -22,6 +22,19 @@ export default function Projects() {
       >
         <Image
           src={"/funnel.svg"}
+          width={385}
+          height={250}
+          alt={""}
+          className="rounded-t-lg"
+        />
+      </CardProject>
+      <CardProject
+        title="Yu-Gi-Oh"
+        description="Este projeto foi proposto pela GrowDev como uma forma de trabalho em equipe, desenvolvemos o projeto para mostrar nossas habilidades tanto softskill quanto hardskill"
+        url="https://yu-gi-oh-nine.vercel.app/"
+      >
+        <Image
+          src={"/yugioh.png"}
           width={385}
           height={250}
           alt={""}
