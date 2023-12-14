@@ -16,7 +16,7 @@ export default function CardProject({
 }: IframeComponentProps) {
   return (
     <section className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-      <section className="w-full">{children}</section>
+      <section className="h-56">{children}</section>
       <div className="p-5">
         <Link href={url} target="_blank">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

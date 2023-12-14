@@ -25,7 +25,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex lg:justify-between sm:justify-between justify-between w-full py-3 px-6 items-center absolute top-0">
+      <nav className="flex lg:justify-between sm:justify-between justify-between w-full z-10 py-3 px-6 items-center absolute top-0">
         <Image
           src="/logo2.svg"
           alt={"logo"}
