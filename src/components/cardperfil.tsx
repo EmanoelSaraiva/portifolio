@@ -1,33 +1,21 @@
-import { useState } from "react";
 import Image from "next/image";
-
 export default function CardPerfil() {
-  const [isHover, setIsHover] = useState(false);
   return (
     <>
-      <section className="flex flex-col items-center md:flex w-3/4 justify-center h-full gap-5">
-        <div
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
-          className="max-md:hidden flex flex-col items-center gap-2"
-        >
-          <Image
-            src={isHover ? "/imgAvatar.png" : "/imgPerfil.jpg"}
-            alt={""}
-            width={200}
-            height={200}
-            className={`rounded-full border-4 border-purple-800 transition duration-500 ease-in-out`}
-            priority
-          />
-        </div>
-        <h1 className="text-2xl text-center font-bold">
-          Emanoel Saraiva da Silva
-        </h1>
-        <section className="border-2 p-4 rounded-2xl border-purple-700 shadow-md dark:shadow-gray-700 hover:animate-pulse">
-          <p className="text-center font-bold text-4xl flex flex-col">
-            FullStack Web
-            <span className="text-purple-700 text-6xl">Developer</span>
-          </p>
+      <section className="flex flex-col min-h-screen items-center justify-center w-full gap-5 relative">
+        <Image
+          src={"/yy3.gif"}
+          alt="gif"
+          width={400}
+          height={400}
+          className="-z-10 absolute"
+        />
+        <section>
+          <p className="font-bold text-3xl">Full Stack</p>
+          <h1 className="font-extrabold text-5xl bg-gradient-to-r from-purple-700 via-purple-500 to-purple-400 bg-clip-text text-transparent">
+            Developer / UX-UI
+          </h1>
+          <h2 className="text-xl font-bold text-end">Emanoel Saraiva</h2>
         </section>
       </section>
     </>

@@ -11,7 +11,7 @@ const roboto = Roboto({
 export default function Projects() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-center gap-2  ${roboto.className}`}
+      className={`flex min-h-screen items-center justify-center gap-2 md:flex-wrap  ${roboto.className}`}
     >
       <NavBar />
 
@@ -22,6 +22,33 @@ export default function Projects() {
       >
         <Image
           src={"/funnel.svg"}
+          width={385}
+          height={250}
+          alt={""}
+          className="rounded-t-lg"
+        />
+      </CardProject>
+
+      <CardProject
+        title="Projeto ODS-4"
+        description="Este projeto foi proposto pela DigitalHouse como conclusão de curso de UX/UI, desenvolvemos o projeto para mostrar nosso aprendizado durante o curso"
+        url="https://www.figma.com/file/UTIqAe0VlGCYY0Q9gn1wgd/Untitled?type=design&node-id=102%3A3&mode=design&t=B9FGfCqvvZ97iqXj-1"
+      >
+        <Image
+          src={"/figma.png"}
+          width={385}
+          height={250}
+          alt={""}
+          className="rounded-t-lg container"
+        />
+      </CardProject>
+      <CardProject
+        title="Yu-Gi-Oh"
+        description="Este projeto foi proposto pela GrowDev como uma forma de trabalho em equipe, desenvolvemos o projeto para mostrar nossas habilidades tanto softskill quanto hardskill"
+        url="https://yu-gi-oh-nine.vercel.app/"
+      >
+        <Image
+          src={"/yugioh.png"}
           width={385}
           height={250}
           alt={""}
