@@ -9,12 +9,13 @@ const roboto = Roboto({
 
 export default function Contacts() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-center gap-2  ${roboto.className}`}
-    >
+    <>
       <NavBar />
-
-      <CardContact />
-    </main>
+      <main
+        className={`flex min-h-screen flex-col items-center justify-center gap-2  ${roboto.className}`}
+      >
+        <CardContact />
+      </main>
+    </>
   );
 }
