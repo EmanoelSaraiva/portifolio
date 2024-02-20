@@ -37,7 +37,7 @@ export default function About() {
           className="max-md:hidden flex flex-col h-52 w-52 items-center rounded-lg gap-2 border-4 absolute left-9 top-64"
         >
           <Image
-            src={isHover ? "/imgAvatar.png" : "/imgPerfil.jpg"}
+            src={isHover ? "/imgAvatar.png" : "/imgPerfil2.jpg"}
             alt={""}
             width={210}
             height={210}
